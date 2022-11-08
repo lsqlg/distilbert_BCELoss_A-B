@@ -167,8 +167,8 @@ model.to(device)
 from util_loss import ResampleLoss
 
 
-m = nn.Sigmoid()
-loss_func = nn.BCELoss()
+m = torch.nn.Sigmoid()
+loss_func = torch.nn.BCELoss()
     
 #Define Loss function 
 def loss_fn(outputs, targets):
